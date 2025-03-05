@@ -172,21 +172,21 @@ function reg(){
         if ( BATestIstrue != null && AlbumTestIstrue === null && SignLogTestIstrue === null && ThreesizeTestIstrue === null ){
             // 輸入值是否包含關鍵字 有就執行這區域
             //改變內部的HTML寫法
-            theReply.innerHTML="蔚藍檔案<br>是一款由Nexon出品的次文化RPG遊戲，主打校園風的青春輕喜劇物語!";
+            theReply.innerHTML="蔚藍檔案<br>是一款由Nexon出品的次文化RPG遊戲";
             Arona.style.backgroundImage ="url(./cheatArona/smile.png)";
             // 阿羅娜內部的背景影像更改連結語法
             //debounce還原阿羅娜，參考註解 debounce寫法那行
         }
         else if ( AlbumTestIstrue != null && BATestIstrue === null && SignLogTestIstrue === null && ThreesizeTestIstrue === null ){
-            theReply.innerHTML="左邊是畫廊喔!<br>點開可以用燈箱的形式欣賞遊戲內的CG圖片";
+            theReply.innerHTML="左邊是畫廊，<br>點開可以用燈箱的形式欣賞遊戲內的CG圖片";
             Arona.style.backgroundImage ="url(./cheatArona/smile.png)";
         }
         else if ( ThreesizeTestIstrue != null && BATestIstrue === null && SignLogTestIstrue === null && AlbumTestIstrue === null ){
-            theReply.innerHTML="為什麼要問這個呢......?";
+            theReply.innerHTML="這個問題不太懂呢";
             Arona.style.backgroundImage ="url(./cheatArona/angry.png)";
         }
         else if ( SignLogTestIstrue != null && BATestIstrue === null && ThreesizeTestIstrue === null && AlbumTestIstrue === null ){
-            theReply.innerHTML="點選右上角的註冊可以加入會員喔!雖然是假的.....";
+            theReply.innerHTML="點選右上角的註冊可以加入會員，但只是使用LocalStorage的模擬";
             Arona.style.backgroundImage ="url(./cheatArona/sad.png)";
         }else{
             theReply.innerHTML="アロナ不懂你的意思?<br>再換個方式問問看吧";
