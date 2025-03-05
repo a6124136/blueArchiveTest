@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>offcailWebsite</title>
-    <link href="/node_modules/lightbox2/dist/css/lightbox.css" rel="stylesheet" />
+    <link href="./node_modules/lightbox2/dist/css/lightbox.css" rel="stylesheet" />
     <!-- 畫廊燈箱的樣式↑ -->
     <link rel="stylesheet" href="style.css">
         <!-- 自己的樣式 -->
@@ -22,7 +22,7 @@
         <div class="slect d-flex">
             <div class="navList">
                 <!-- 下載按鈕 -->
-                <a href="https://www.youtube.com/shorts/gQLhsDhYNLA" name="原神啟動囉">
+                <a href="https://forum.nexon.com/bluearchiveTW/board_list?board=3351" name="檔案啟動">
                 <input type="button"  value="下載啟動器" class="downLoad">
                 </a>
             </div>
@@ -38,13 +38,19 @@
             <div class="navList logIn">
                 <a id="logAccount">
                     <!-- ↑JS抓ID事件監聽呼叫表單 -->
-                    <img src="navicon/schale.png"  alt="">登入
+                    <img src="./navicon/schale.png"  alt="">
+                    <span id="logInSpan">
+                        登入
+                    </span>
                 </a>
             </div>
             <div class="navList signUp">
                 <a id="signAccount">
                     <!-- ↑JS抓ID事件監聽呼叫表單 -->
-                    <img src="navicon/schale.png" alt="" >註冊
+                    <img src="./navicon/schale.png" alt="" >
+                    <span id="signUpSpan">
+                        註冊
+                    </span>
                 </a>
             </div>
         </div>
@@ -116,7 +122,7 @@
                     用關鍵字來問點問題吧!<br>關於『蔚藍檔案』、<br>『註冊登入』、<br>『CG畫廊』都可以喔!
                 </div>
                 <!-- 回話區域 -->
-                <label>問問アロナ</label>
+                <label  >問問アロナ</label>
                 <input type="text" class="sayToArona" name="sayToArona" id="talkQues">
                 <input type="button" value="提問" class="sayIt" id="sentQues">
             </div>
